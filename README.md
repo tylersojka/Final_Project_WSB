@@ -1,5 +1,5 @@
 # r/WallStreetBets Ticker Mentions Frequency Analysis
-
+![](https://github.com/alainacox/Final_Project_WSB/blob/main/team%20(2).jpg)
 ​
 ## Project Overview
 
