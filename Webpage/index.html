@@ -4,9 +4,9 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
     <meta http-equiv="x-ua-compatible" content="ie=edge" />
-    <title>Material Design for Bootstrap</title>
+    <title>WSB Stonks</title>
     <!-- MDB icon -->
-    <link rel="icon" href="img/mdb-favicon.ico" type="image/x-icon" />
+    <link rel="icon" href="img/wsb3.png" type="image/x-icon" />
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css" />
     <!-- Google Fonts Roboto -->
@@ -16,30 +16,219 @@
     />
     <!-- MDB -->
     <link rel="stylesheet" href="css/mdb.min.css" />
+    <link rel="stylesheet" href="css/dark.css" />
   </head>
-  <body>
+  <body class="fixed-sn dark-skin dark-theme">
     <!-- Start our project here-->
-    <div class="container">
-      <div class="d-flex justify-content-center align-items-center" style="height: 100vh">
-        <div class="text-center">
-          <img
-            class="mb-4"
-            src="https://mdbootstrap.com/img/logo/mdb-transparent-250px.png"
-            style="width: 250px; height: 90px"
-          />
-          <h5 class="mb-3">Thank you for using our product. We're glad you're with us.</h5>
-          <p class="mb-3">MDB Team</p>
-          <a
-            class="btn btn-primary btn-lg"
-            href="https://mdbootstrap.com/docs/standard/getting-started/"
-            target="_blank"
-            role="button"
-            >Start MDB tutorial</a
-          >
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-md">
+      <!-- Container wrapper -->
+      <div class="container-fluid">
+       
+        <!-- Toggle button -->
+        <button
+          class="btn btn-outline-success me-2"
+          type="button"
+          data-mdb-toggle="collapse"
+          data-mdb-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <i class="fas fa-bars"></i>
+        </button>
+
+        <!-- Collapsible wrapper -->
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <!-- Left links -->
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+
+            <li class="nav-item">
+              <a class="btn btn-outline-secondary me-2" aria-current="page" href="#">Home</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="btn btn-outline-danger me-2" href="#">Members</a>
+            </li>
+
+             </li>
+            <li class="nav-item">
+              <a class="btn btn-outline-warning me-2" href="#">Readme</a>
+            </li>
+
+            <!-- Navbar dropdown -->
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="navbarDropdown"
+                role="button"
+                data-mdb-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Select Ticker
+              </a>
+              <!-- Dropdown menu -->
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li><hr class="dropdown-divider" /></li>
+                <li>
+                  <a class="dropdown-item" href="#">Something else here</a>
+                </li>
+              </ul>
+           
+          </ul>
+          <!-- Left links -->
+
+          <!-- Search form -->
+          <form class="d-flex input-group w-auto">
+            <input
+              type="search"
+              class="form-control"
+              placeholder="Search Ticker"
+              aria-label="Search"
+            />
+            <button
+              class="btn btn-outline-primary"
+              type="button"
+              data-mdb-ripple-color="dark"
+            >
+              Search
+            </button>
+          </form>
         </div>
+        <!-- Collapsible wrapper -->
+      </div>
+      <!-- Container wrapper -->
+    </nav>
+    <!-- Navbar -->
+    <div class="row">
+      <div class="col-xl-12 jumbotron text-center">
+        <h1>WallStreetBets Stonk Analysis Dashboard</h1>
+      
       </div>
     </div>
+    <!-- Main layout -->
+  <main class="pt-3">
+
+    <div class="container-fluid">
+
+      <!-- Grid row -->
+      <div class="row">
+
+        <!-- Grid column -->
+        <div class="col-md-12 mb-4">
+
+          <div class="card">
+            <div class="card-body pl-0 pr-2 pb-0">
+              <div class="float-left white-text pl-4">
+                <p class="font-weight-light mb-1 mt-n1 text-white-50 font-small">December 6, 2020 - February 6, 2021</p>
+                <h2 class="font-weight-light">Performance</h2>
+              </div>
+              <div class="btn-group float-right pr-3" role="group" aria-label="Basic example">
+                <button type="button" class="btn btn-sm btn-primary" id="accountsData">Sentiment</button>
+                <button type="button" class="btn btn-sm btn-primary" id="purchasesData">Price</button>
+                <button type="button" class="btn btn-sm btn-primary" id="sessionsData">Mentions</button>
+              </div>
+              <canvas id="lineChart" height="90"></canvas>
+            </div>
+          </div>
+
+        </div>
+        <!-- Grid column -->
+
+      </div>
+      <!-- Grid row -->
+
+      <!-- Grid row -->
+      <div class="row">
+
+        <!-- Grid column -->
+        <div class="col-lg-4 col-md-12 mb-4">
+
+          <div class="card">
+            <div class="card-body px-2">
+              <div class="float-left white-text pl-4">
+                <p class="font-weight-light mb-1 mt-n1 text-white-50 font-small">Mentions</p>
+                <p><i class="fas fa-bullhorn pr-2 align-text-top mt-n1 icon icon-blue"></i><span
+                    class="font-weight-light h3">354 780</span></p>
+              </div>
+              <canvas id="horizontalBar" height="280"></canvas>
+            </div>
+          </div>
+
+        </div>
+        <!-- Grid column -->
+
+        <!-- Grid column -->
+        <div class="col-lg-4 col-md-6 mb-4">
+
+          <div class="card">
+            <div class="card-body px-2">
+              <div class="float-left white-text pl-4">
+                <p class="font-weight-light mb-1 mt-n1 text-white-50 font-small">Sentiment</p>
+                <p><i class="far fa-heart pr-2 align-text-top mt-n1 icon icon-blue"></i><span
+                    class="font-weight-light h3">14,500K</span></p>
+              </div>
+              <canvas id="lineChartSecond" height="280"></canvas>
+            </div>
+          </div>
+
+        </div>
+        <!-- Grid column -->
+
+        <!-- Grid column -->
+        <div class="col-lg-4 col-md-6 mb-4">
+
+          <div class="card">
+            <div class="card-body px-2">
+              <div class="float-left white-text pl-4">
+                <p class="font-weight-light mb-1 mt-n1 text-white-50 font-small">Price</p>
+                <p><i class="fas fa-chart-line pr-2 align-text-top mt-n1 icon icon-blue"></i><span
+                    class="font-weight-light h3">7,000€</span></p>
+              </div>
+              <canvas id="barChart" height="280"></canvas>
+            </div>
+          </div>
+
+        </div>
+        <!-- Grid column -->
+
+      </div>
+      <!-- Grid row -->
+
+      <!-- Grid row -->
+      <div class="row">
+
+        <!-- Grid column -->
+        <div class="col-md-6 mb-4">
+
+          
+
+        </div>
+        <!-- Grid column -->
+
+        <!-- Grid column -->
+        <div class="col-md-6 mb-4">
+
+
+        </div>
+        <!-- Grid column -->
+
+      </div>
+      <!-- Grid row -->
+
+    </div>
+
+  <!-- Main layout -->
+
+    
+
     <!-- End our project here-->
+
+
+
 
     <!-- MDB -->
     <script type="text/javascript" src="js/mdb.min.js"></script>
