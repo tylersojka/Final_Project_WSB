@@ -16,11 +16,10 @@ While trying to predict trends in something as dynamic as stock prices from such
     <li> A ML model will use the comment frequency data to attempt to predict stock market price for the specific tickers and perform principle component analysis on the provided Reddit features and project-defined features. </li>
 </ol> 
 
-
 ## Data Sources
 
 - Reddit API--web scraping comments from r/WallStreetBets from 1 Dec 2020 thru 7 Feb 2021: https://pypi.org/project/pmaw/
-- InterStock Data API--pulling stock prices at open, close, etc. for specified stock tickers from the comment frequency analysis
+- InterStock Data API--pulling stock prices at open, close, etc. for specified stock tickers from the comment frequency analysis. https://algotrading101.com/learn/yfinance-guide/
 ​
 ## Technology
 
@@ -36,5 +35,5 @@ While trying to predict trends in something as dynamic as stock prices from such
 ​
 ## Communication
 
-The group will collaborate through Trello and Zoom. 
+The group collaborates through Trello, Slack, and Zoom. 
 
