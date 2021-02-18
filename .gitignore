@@ -3,6 +3,9 @@ praw.ini
 aws_config.json
 wallstreetbets_posts.csv
 wallstreetbets_comments.csv
+wallstreetbets_posts.csv
+wallstreetbets_comments.csv
+cleaned_wsb_comments.csv
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
