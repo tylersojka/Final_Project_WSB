@@ -18,8 +18,22 @@ While trying to predict trends in something as dynamic as stock prices from such
 
 ## Data Sources
 
-- Reddit API--web scraping comments from r/WallStreetBets from 1 Dec 2020 thru 7 Feb 2021: https://pypi.org/project/pmaw/
-- InterStock Data API--pulling stock prices at open, close, etc. for specified stock tickers from the comment frequency analysis. https://algotrading101.com/learn/yfinance-guide/
+- Reddit post and comment dataset
+  - Pushshift API and pmaw python library. According to reddits API rules "Clients connecting via OAuth2 may make up to 60 requests per minute." This, however, was far to limiting for what we hoped accomplish. We needed another option to obtain mass amounts of post and comment data which lead us to Pushshift. 
+  
+    Pushshift is a big-data storage and analytics project started and maintained by Jason Baumgartner (/u/Stuck_In_the_Matrix). Most people know it for its copy of reddit comments and submissions. Essentially, Pushshift is an enormous database of comment and post objects, gathered in near real time as they appear on reddit. Pushshift provides an API to access this database, however, it too was even too slow for what we needed. 
+    
+    [PMAW](https://pypi.org/project/pmaw/) is self described as "an ultra minimalist wrapper for the Pushshift API which uses multithreading to retrieve Reddit comments and submissions. General usage is through the PushshiftAPI class which provides methods for interacting with different Pushshift endpoints." We obtained a set of posts, totaling ~800k posts, in about 2 days of run time. The comment dataset, based on the entire comment tree from each of the posts was then started. After about 5 days of running, the script was still not done. Lucky for us though, a member of reddit posted the exact dataset we were after, minus 3 days. 
+    
+    This dataset was pulled down from [kaggle](https://www.kaggle.com/mattpodolak/rwallstreetbets-posts-and-comments?select=wallstreetbets_posts.csv). The dataset contains all posts and comments from r/WallStreetBets from December 6, 2020 - February 6, 2021. The post dataset is roughly 700k rows and 80 columns, many of which will be dropped due to near 100% null values. The comment dataset is similar in width, but over 8 million rows. The row count, however, includes an extremely high percentage of "deleted" comments, comments that were deleted for whatever reason, but a placeholder of "deleted" was left behind for Pushshift to consume. After dropping these essentially null rows, we should be left with roughly half the original length. 
+- Daily / Hourly stock prices
+  -  Stock prices at open, close, etc. for specified stock tickers from the comment frequency analysis will be pulled from Yahoo Finance using the [yfinance](https://pypi.org/project/yfinance/) python library. yfinance provides a reliable, threaded, and Pythonic way to download historical market data from Yahoo! finance.
+- Stock ticker list
+  - A list of the most shorted stock tickers were scraped from [marketwatch](https://www.marketwatch.com/tools/screener/short-interest). These were selected because we needed to narrow down our stock ticker list to speed up the ETL process.
+  - A longer list of all stock tickers was assembled from different sources.
+
+
+ 
 ​
 ## Technology
 
