@@ -32,8 +32,9 @@ While trying to predict trends in something as dynamic as stock prices from such
   - A list of the most shorted stock tickers were scraped from [marketwatch](https://www.marketwatch.com/tools/screener/short-interest). These were selected because we needed to narrow down our stock ticker list to speed up the ETL process.
   - A longer list of all stock tickers was assembled from different sources.
 
+- Aggregate the data source
+- Once we compiled the above sources, we needed to narrow and filter a large amount of data to perform frequency analysis on ticker mentions correlation with stock prices. To do so, we combined two different data csv files; the top 50 mentioned tickers and a random selection from all mentioned tickers.
 
- 
 ​
 ## Technology
 
