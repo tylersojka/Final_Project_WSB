@@ -49,5 +49,10 @@ While trying to predict trends in something as dynamic as stock prices from such
 ​
 ## Communication
 
-The group collaborates through Trello, Slack, and Zoom. 
+The group collaborates through Trello, Slack, and Zoom and Google Slides. 
+
+## Presentation Boards 
+
+[Slides](https://docs.google.com/presentation/d/1CnO_A2UGeZOWkdU0uxEbxQvIrU6RGEWmLszjNCRB4ic/edit#slide=id.gbcecd73ff9_0_5)
+
 
