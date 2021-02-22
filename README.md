@@ -30,7 +30,8 @@ While trying to predict trends in something as dynamic as stock prices from such
   -  Stock prices at open, close, etc. for specified stock tickers from the comment frequency analysis will be pulled from Yahoo Finance using the [yfinance](https://pypi.org/project/yfinance/) python library. yfinance provides a reliable, threaded, and Pythonic way to download historical market data from Yahoo! finance.
 - Stock ticker list
   - A list of the most shorted stock tickers were scraped from [marketwatch](https://www.marketwatch.com/tools/screener/short-interest). These were selected because we needed to narrow down our stock ticker list to speed up the ETL process.
-  - A longer list of all stock tickers was assembled from different sources. 
+  - A short stock is a stock sold that had been borrowed and purchased back at a lower price. 
+  - A longer list of all stock tickers was assembled from different sources.
 
 ​
 ## Technology
