@@ -28,9 +28,8 @@ While trying to predict trends in something as dynamic as stock prices from such
     This dataset was pulled down from [kaggle](https://www.kaggle.com/mattpodolak/rwallstreetbets-posts-and-comments?select=wallstreetbets_posts.csv). The dataset contains all posts and comments from r/WallStreetBets from December 6, 2020 - February 6, 2021. The post dataset is roughly 700k rows and 80 columns, many of which will be dropped due to near 100% null values. The comment dataset is similar in width, but over 8 million rows. The row count, however, includes an extremely high percentage of "deleted" comments, comments that were deleted for whatever reason, but a placeholder of "deleted" was left behind for Pushshift to consume. After dropping these essentially null rows, we should be left with roughly half the original length. 
 - Daily / Hourly stock prices
   -  Stock prices at open, close, etc. for specified stock tickers from the comment frequency analysis will be pulled from Yahoo Finance using the [yfinance](https://pypi.org/project/yfinance/) python library. yfinance provides a reliable, threaded, and Pythonic way to download historical market data from Yahoo! finance.
-- Stock ticker list
+- Stock ticker list (a borrowed stock that is sold with the plan to purchase back at a lower price)
   - A list of the most shorted stock tickers were scraped from [marketwatch](https://www.marketwatch.com/tools/screener/short-interest). These were selected because we needed to narrow down our stock ticker list to speed up the ETL process.
-  - A short stock is a stock sold that had been borrowed and purchased back at a lower price. 
   - A longer list of all stock tickers was assembled from different sources.
 
 ​
@@ -42,13 +41,18 @@ While trying to predict trends in something as dynamic as stock prices from such
 
 3. Comment frequency analysis will be done in Python. 
 
-4. Data Visualizations will be designed in Python's Matplotlib and JavaScript's Plotly.
+4. Machine Learning story will be done using the Scikit. 
 
-5. A webapp will be hosted through Heroku.
+5. Data Visualizations will be designed in Python's Matplotlib and JavaScript's Plotly.
+
+6. A webapp will be hosted through Heroku.
+
 ​
 ## Communication
 
+
 The group collaborates through Trello, Slack, and Zoom and Google Slides. 
+
 
 ## Presentation Boards 
 
