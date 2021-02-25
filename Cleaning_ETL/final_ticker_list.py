@@ -21,5 +21,8 @@ shorted_list = pd.read_csv("../Data/shorted_tickers.csv")
 # combine ticker list and the shorted list 
 final_ticker_list = shorted_list.append(ticker_list)
 
+# remove duplicates
+final_ticker_list = final_ticker_list.drop_duplicates()
+
 # save to csv
 final_ticker_list.to_csv("../Data/final_ticker_list.csv", index=False)
