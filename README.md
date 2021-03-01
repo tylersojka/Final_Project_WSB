@@ -1,7 +1,7 @@
 # r/WallStreetBets Ticker Mentions Frequency Analysis
 
 
-![](Images/team%20(2).jpg)
+![Wall Street Bets Cover Image](https://user-images.githubusercontent.com/71476009/109439467-05219480-79f4-11eb-93b0-c98663b938b0.png)
 
 ​
 ## Project Overview
@@ -32,6 +32,10 @@ While trying to predict trends in something as dynamic as stock prices from such
   - A list of the most shorted stock tickers were scraped from [marketwatch](https://www.marketwatch.com/tools/screener/short-interest). These were selected because we needed to narrow down our stock ticker list to speed up the ETL process.
   - A longer list of all stock tickers was assembled from different sources.
 
+## Machine Learning Model
+
+We chose a supervised learning model to split our data and used Linear regression to train and predict the prices of stocks based on ticker mentions. 
+
 ​
 ## Technology
 
@@ -50,8 +54,12 @@ While trying to predict trends in something as dynamic as stock prices from such
 ​
 ## Communication
 
-
 The group collaborates through Trello, Slack, and Zoom and Google Slides. 
+
+
+## Project Dashboard
+
+https://wsb-dashboard.herokuapp.com/
 
 
 ## Presentation Boards 
