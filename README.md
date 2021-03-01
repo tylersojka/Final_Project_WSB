@@ -34,7 +34,7 @@ While trying to predict trends in something as dynamic as stock prices from such
 
 ## Machine Learning Model
 
-We chose a supervised learning model to split our data and used Linear regression to train and predict the prices of stocks based on ticker mentions. 
+To build out Machine Learning Model we used Linear Regression to predict stock price outcomes based on ticker mentions. To start, we cleaned the data by removing common words mistaken for tickers and got rid of unwanted columns, next we combined our count and final ticker list into a datframe, then isolated one ticker (AMC) in order to test the ML model. 
 
 ​
 ## Technology
