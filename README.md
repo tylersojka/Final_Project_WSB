@@ -54,6 +54,7 @@ To build out Machine Learning Model we used Linear Regression to predict stock p
 ​
 ## Communication
 
+
 The group collaborates through Trello, Slack, and Zoom and Google Slides. 
 
 
@@ -65,5 +66,6 @@ https://wsb-dashboard.herokuapp.com/
 ## Presentation Boards 
 
 [Slides](https://docs.google.com/presentation/d/1CnO_A2UGeZOWkdU0uxEbxQvIrU6RGEWmLszjNCRB4ic/edit#slide=id.gbcecd73ff9_0_5)
+
 
 
