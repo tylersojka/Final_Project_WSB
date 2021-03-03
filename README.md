@@ -1,7 +1,7 @@
 # r/WallStreetBets Ticker Mentions Frequency Analysis
 
 
-![](Images/team%20(2).jpg)
+![Wall Street Bets Cover Image](https://user-images.githubusercontent.com/71476009/109439467-05219480-79f4-11eb-93b0-c98663b938b0.png)
 
 ​
 ## Project Overview
@@ -28,12 +28,14 @@ While trying to predict trends in something as dynamic as stock prices from such
     This dataset was pulled down from [kaggle](https://www.kaggle.com/mattpodolak/rwallstreetbets-posts-and-comments?select=wallstreetbets_posts.csv). The dataset contains all posts and comments from r/WallStreetBets from December 6, 2020 - February 6, 2021. The post dataset is roughly 700k rows and 80 columns, many of which will be dropped due to near 100% null values. The comment dataset is similar in width, but over 8 million rows. The row count, however, includes an extremely high percentage of "deleted" comments, comments that were deleted for whatever reason, but a placeholder of "deleted" was left behind for Pushshift to consume. After dropping these essentially null rows, we should be left with roughly half the original length. 
 - Daily / Hourly stock prices
   -  Stock prices at open, close, etc. for specified stock tickers from the comment frequency analysis will be pulled from Yahoo Finance using the [yfinance](https://pypi.org/project/yfinance/) python library. yfinance provides a reliable, threaded, and Pythonic way to download historical market data from Yahoo! finance.
-- Stock ticker list
+- Stock ticker list (a borrowed stock that is sold with the plan to purchase back at a lower price)
   - A list of the most shorted stock tickers were scraped from [marketwatch](https://www.marketwatch.com/tools/screener/short-interest). These were selected because we needed to narrow down our stock ticker list to speed up the ETL process.
   - A longer list of all stock tickers was assembled from different sources.
 
+## Machine Learning Model
 
- 
+To build out Machine Learning Model we used Linear Regression to predict stock price outcomes based on ticker mentions. To start, we cleaned the data by removing common words mistaken for tickers and got rid of unwanted columns, next we combined our count and final ticker list into a datframe, then isolated one ticker (AMC) in order to test the ML model. 
+
 ​
 ## Technology
 
@@ -43,11 +45,27 @@ While trying to predict trends in something as dynamic as stock prices from such
 
 3. Comment frequency analysis will be done in Python. 
 
-4. Data Visualizations will be designed in Python's Matplotlib and JavaScript's Plotly.
+4. Machine Learning story will be done using the Scikit. 
 
-5. A webapp will be hosted through Heroku.
+5. Data Visualizations will be designed in Python's Matplotlib and JavaScript's Plotly.
+
+6. A webapp will be hosted through Heroku.
+
 ​
 ## Communication
 
-The group collaborates through Trello, Slack, and Zoom. 
+
+The group collaborates through Trello, Slack, and Zoom and Google Slides. 
+
+
+## Project Dashboard
+
+https://wsb-dashboard.herokuapp.com/
+
+
+## Presentation Boards 
+
+[Slides](https://docs.google.com/presentation/d/1CnO_A2UGeZOWkdU0uxEbxQvIrU6RGEWmLszjNCRB4ic/edit#slide=id.gbcecd73ff9_0_5)
+
+
 
