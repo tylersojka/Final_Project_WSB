@@ -7,6 +7,10 @@ cleaned_wsb_comments.csv
 cleaned_wsb_posts.csv
 comment_body_count_df.csv
 comment_body_count_df.csv
+
+
+
+database.ini
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
