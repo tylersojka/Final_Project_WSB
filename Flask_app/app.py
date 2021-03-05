@@ -8,7 +8,7 @@ from flask_sqlalchemy import SQLAlchemy
 
 
 # Obtain the configuration parameters
-params = config()
+# params = config()
 
 #set up flask
 app = Flask(__name__)
