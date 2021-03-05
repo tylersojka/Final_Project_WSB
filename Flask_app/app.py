@@ -1,8 +1,8 @@
-# import sys
-# sys.path.append(".")
+import os
+# os.environ
+
 from flask import Flask, render_template, redirect
-# Import the 'config' function from the config.py file
-# from Postgres.config import config
+
 
 from flask_sqlalchemy import SQLAlchemy
 
@@ -14,9 +14,10 @@ from flask_sqlalchemy import SQLAlchemy
 app = Flask(__name__)
 
 
-#use flask_sqlalchemy to set up postgres connection
-# app.config["SQLALCHEMY_DATABASE_URI"] = f"postgresql://{params['user']}:{params['password']}@{params['host']}/{params['production_database']}"  #connect to postgres 
+
 # pg = SQLAlchemy(app)
+app.config["SQLALCHEMY_DATABASE_URI"] = os.environ["postgres_uri"]
+pg = SQLAlchemy(app)
 
 
 @app.route("/")
