@@ -1,4 +1,6 @@
 import os
+import pandas as pd
+
 # os.environ
 
 from flask import Flask, render_template, redirect
@@ -8,7 +10,7 @@ from flask_sqlalchemy import SQLAlchemy
 #set up flask
 app = Flask(__name__)
 
-app.config["SQLALCHEMY_DATABASE_URI"] = os.environ["postgres_uri"]
+app.config["SQLALCHEMY_DATABASE_URI"] = os.getenv("postgres_uri")
 pg = SQLAlchemy(app)
 
 
