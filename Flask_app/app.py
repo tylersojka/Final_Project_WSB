@@ -1,8 +1,8 @@
-import sys
-sys.path.append(".")
+# import sys
+# sys.path.append(".")
 from flask import Flask, render_template, redirect
 # Import the 'config' function from the config.py file
-from Postgres.config import config
+# from Postgres.config import config
 
 from flask_sqlalchemy import SQLAlchemy
 
