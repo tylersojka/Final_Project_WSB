@@ -45,7 +45,7 @@ To build our Machine Learning Model we used Linear Regression to predict stock p
 
 3. Comment frequency analysis will be done in Python. 
 
-4. Machine Learning story will be done using the Scikit. 
+4. Machine Learning story will be done using the Scikit-Learn. 
 
 5. Data Visualizations will be designed in Python's Matplotlib and JavaScript's Plotly.
 
