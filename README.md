@@ -32,6 +32,8 @@ While trying to predict trends in something as dynamic as stock prices from such
   - A list of the most shorted stock tickers were scraped from [marketwatch](https://www.marketwatch.com/tools/screener/short-interest). These were selected because we needed to narrow down our stock ticker list to speed up the ETL process.
   - A longer list of all stock tickers was assembled from different sources.
 
+<img width="854" alt="Screen Shot 2021-03-13 at 12 15 27 PM" src="https://user-images.githubusercontent.com/71476009/111041557-f4125380-83f5-11eb-8181-6937f26fa163.png">
+
 ## Machine Learning Model
 
 To build our Machine Learning Model we used Linear Regression to predict stock price outcomes based on ticker mentions. To start, we cleaned the data by removing common words mistaken for tickers and got rid of unwanted columns and dropped null dates (for when the stock market is closed,) next we combined our count and final ticker list into a datframe, then isolated one ticker (AMC) in order to test the ML model before scaling it to our larger dataset.
