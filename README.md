@@ -38,6 +38,8 @@ While trying to predict trends in something as dynamic as stock prices from such
 
 To build our Machine Learning Model we used Linear Regression to predict stock price outcomes based on ticker mentions. To start, we cleaned the data by removing common words mistaken for tickers and got rid of unwanted columns and dropped null dates (for when the stock market is closed,) next we combined our count and final ticker list into a datframe, then isolated one ticker (AMC) in order to test the ML model before scaling it to our larger dataset.
 
+<img width="1167" alt="Screen Shot 2021-03-11 at 5 12 22 PM" src="https://user-images.githubusercontent.com/71476009/111041653-84509880-83f6-11eb-8992-03f260b27590.png">
+
 ​
 ## Technology
 
