@@ -40,6 +40,8 @@ To build our Machine Learning Model we used Linear Regression to predict stock p
 
 <img width="1167" alt="Screen Shot 2021-03-11 at 5 12 22 PM" src="https://user-images.githubusercontent.com/71476009/111041653-84509880-83f6-11eb-8992-03f260b27590.png">
 
+<img width="1170" alt="Screen Shot 2021-03-11 at 5 13 33 PM" src="https://user-images.githubusercontent.com/71476009/111054696-c21be400-842b-11eb-8957-78b70af59ab1.png">
+
 ​
 ## Technology
 
